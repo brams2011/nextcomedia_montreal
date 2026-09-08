@@ -1,0 +1,63 @@
+import { Lang, PageRoute } from '../types';
+
+export const routesMap: Record<Lang, Record<PageRoute, string>> = {
+  fr: {
+    home: '/fr/',
+    approach: '/fr/notre-approche',
+    compliance: '/fr/confidentialite-et-conformite',
+    about: '/fr/a-propos',
+    contact: '/fr/contact',
+    privacy: '/fr/politique-de-confidentialite',
+    terms: '/fr/conditions-utilisation',
+  },
+  en: {
+    home: '/en/',
+    approach: '/en/our-approach',
+    compliance: '/en/privacy-and-compliance',
+    about: '/en/about',
+    contact: '/en/contact',
+    privacy: '/en/privacy-policy',
+    terms: '/en/terms-of-use',
+  },
+};
+
+export const ui = {
+  fr: {
+    'brand.name': 'Nextcomedia',
+    'brand.descriptor': "Génération de leads pour l'assurance",
+    'nav.home': 'Accueil',
+    'nav.approach': 'Notre approche',
+    'nav.compliance': 'Confidentialité & conformité',
+    'nav.about': 'À propos',
+    'nav.contact': 'Contact',
+    'nav.cta': 'Demander un devis',
+    'nav.secondary_cta': 'Prendre rendez-vous',
+    'footer.description': "Nextcomedia accompagne les courtiers indépendants, cabinets et MGA au Québec dans la prise de contact, la qualification rigoureuse et la prise de rendez-vous.",
+    'footer.quickLinks': 'Navigation',
+    'footer.legal': 'Conformité & Légal',
+    'footer.privacy': 'Politique de confidentialité',
+    'footer.terms': "Conditions d'utilisation",
+    'footer.allRights': 'Tous droits réservés.',
+    'footer.disclaimer': "Nextcomedia n'est pas un cabinet de courtage ni une compagnie d'assurance. Nextcomedia n'exerce aucune activité de conseil, de distribution ou de souscription de produits d'assurance. Ses prestations sont strictement limitées à la prospection, la prise de contact, la qualification et la mise en relation avec des professionnels autorisés. [Texte réglementaire préliminaire — soumis à validation juridique].",
+    'compliance.badge': 'Information réglementaire en cours de validation juridique [À VALIDER]',
+  },
+  en: {
+    'brand.name': 'Nextcomedia',
+    'brand.descriptor': 'Lead generation for insurance',
+    'nav.home': 'Home',
+    'nav.approach': 'Our approach',
+    'nav.compliance': 'Privacy & compliance',
+    'nav.about': 'About',
+    'nav.contact': 'Contact',
+    'nav.cta': 'Request a quote',
+    'nav.secondary_cta': 'Schedule a call',
+    'footer.description': 'Nextcomedia assists independent brokers, insurance firms, and MGAs in Quebec with targeted outreach, rigorous qualification, and qualified appointment booking.',
+    'footer.quickLinks': 'Navigation',
+    'footer.legal': 'Compliance & Legal',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Use',
+    'footer.allRights': 'All rights reserved.',
+    'footer.disclaimer': 'Nextcomedia is neither an insurance brokerage firm nor an insurance company. Nextcomedia does not engage in advising, distributing, or underwriting insurance products. Its services are strictly limited to prospecting, outreach, qualification, and connecting prospective clients with licensed professionals. [Preliminary regulatory text — subject to legal validation].',
+    'compliance.badge': 'Regulatory information pending legal validation [PENDING VALIDATION]',
+  },
+};

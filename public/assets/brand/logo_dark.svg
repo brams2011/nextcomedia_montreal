@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" width="100%" height="100%">
+  <defs>
+    <!-- Dark Mode Orbit Glow Gradient -->
+    <linearGradient id="logoOrbitDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="45%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- 3D Blue Ribbon Body Gradient (Dark) -->
+    <linearGradient id="logoBlueBodyDark" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="35%" stop-color="#2563eb" />
+      <stop offset="70%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <!-- Specular Highlight for Dark Mode -->
+    <linearGradient id="logoBlueSpecularDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#e0f2fe" stop-opacity="0.8" />
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Purple Ascending Pillar Gradient (Dark) -->
+    <linearGradient id="logoPurpleBodyDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#581c87" />
+      <stop offset="30%" stop-color="#7c3aed" />
+      <stop offset="75%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f0abfc" />
+    </linearGradient>
+
+    <!-- Purple Pillar Specular Line -->
+    <linearGradient id="logoPurpleSpecularDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0" />
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#f5d0fe" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- "media" Wordmark Gradient (Dark) -->
+    <linearGradient id="mediaGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Subtle Outer Glow Filter -->
+    <filter id="logoGlowDark" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#0284c7" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Left Emblem Group -->
+  <g transform="translate(10, 10) scale(0.83)">
+    <!-- Circular Orbit Swooshes (Glowing) -->
+    <g opacity="0.95" filter="url(#logoGlowDark)">
+      <path 
+        d="M 36 28 C 54 13 82 17 96 34 C 104 46 104 60 98 72" 
+        fill="none" 
+        stroke="url(#logoOrbitDark)" 
+        stroke-width="6.5" 
+        stroke-linecap="round" 
+      />
+      <path 
+        d="M 22 56 C 18 70 24 84 36 93 C 52 104 76 103 92 90" 
+        fill="none" 
+        stroke="url(#logoOrbitDark)" 
+        stroke-width="6.5" 
+        stroke-linecap="round" 
+      />
+    </g>
+
+    <!-- 3D Letter N -->
+    <g>
+      <path 
+        d="M 30 72 L 48 30 C 50 25 56 25 58 30 L 68 74" 
+        fill="none" 
+        stroke="url(#logoBlueBodyDark)" 
+        stroke-width="17" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+      />
+      <path 
+        d="M 30 72 L 48 30 C 50 25 56 25 58 30 L 68 74" 
+        fill="none" 
+        stroke="url(#logoBlueSpecularDark)" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        opacity="0.9" 
+      />
+      <line 
+        x1="66" 
+        y1="74" 
+        x2="88" 
+        y2="22" 
+        stroke="url(#logoPurpleBodyDark)" 
+        stroke-width="17" 
+        stroke-linecap="round" 
+      />
+      <line 
+        x1="66" 
+        y1="74" 
+        x2="88" 
+        y2="22" 
+        stroke="url(#logoPurpleSpecularDark)" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+      />
+    </g>
+  </g>
+
+  <!-- Wordmark: Nextcomedia -->
+  <text x="120" y="66" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" letter-spacing="-0.03em">
+    <tspan fill="#ffffff">Nextco</tspan><tspan fill="url(#mediaGradDark)">media</tspan>
+  </text>
+
+  <!-- Official Tagline: COMMUNIQUER • CONVERTIR • GRANDIR -->
+  <text x="122" y="93" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="600" font-size="11.5" letter-spacing="0.22em" fill="#94a3b8">
+    COMMUNIQUER <tspan fill="#38bdf8" font-weight="800">•</tspan> CONVERTIR <tspan fill="#c084fc" font-weight="800">•</tspan> GRANDIR
+  </text>
+</svg>

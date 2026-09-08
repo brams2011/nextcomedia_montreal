@@ -1,0 +1,6 @@
+{
+  "name": "Nextcomedia",
+  "description": "Génération de leads et qualification de prospects pour l'assurance au Québec.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
