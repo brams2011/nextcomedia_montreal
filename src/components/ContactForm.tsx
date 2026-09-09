@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Lang, ContactFormData } from '../types';
-import { CheckCircle2, AlertCircle, Calendar, ArrowRight, Loader2 } from 'lucide-react';
+import { CheckCircle2, AlertCircle, Calendar, ArrowRight, Loader2, ExternalLink, Clock } from 'lucide-react';
 
 interface ContactFormProps {
   lang?: Lang;
@@ -397,8 +397,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({ lang = 'fr' }) => {
             </span>
 
             <a
-              href="#calendly-booking"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors"
+              href="https://calendly.com/ino-service2025/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer"
             >
               <Calendar className="w-4 h-4 text-blue-600" />
               {isFr ? 'Planifier un appel préliminaire' : 'Schedule a preliminary call'}
@@ -409,7 +411,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ lang = 'fr' }) => {
 
       {/* Calendly Booking Anchor Section */}
       <div id="calendly-booking" className="mt-12 pt-8 border-t border-slate-100">
-        <div className="flex items-center gap-3 mb-3">
+        <div className="flex items-center gap-3 mb-4">
           <div className="p-2.5 rounded-xl bg-blue-50 text-blue-600">
             <Calendar className="w-5 h-5" />
           </div>
@@ -418,20 +420,40 @@ export const ContactForm: React.FC<ContactFormProps> = ({ lang = 'fr' }) => {
               {isFr ? 'Prise de rendez-vous directe' : 'Direct Appointment Booking'}
             </h4>
             <p className="text-xs text-slate-500">
-              {isFr ? 'Échange de 20 minutes avec la direction d\'affaires à Montréal.' : '20-minute discussion with our Montreal leadership.'}
+              {isFr ? 'Échange de 30 minutes avec notre direction d\'affaires.' : '30-minute introductory call with our business management.'}
             </p>
           </div>
         </div>
 
-        <div className="bg-slate-50/70 rounded-2xl border border-dashed border-slate-300 p-8 text-center text-xs text-slate-500">
-          <p className="font-semibold text-slate-800 mb-1">
-            [Emplacement configurable : Calendly / Calendrier de rendez-vous]
-          </p>
-          <p className="text-slate-400 max-w-md mx-auto">
-            {isFr
-              ? 'Intégration prête pour Calendly ou solution équivalente lors de la configuration du lien officiel.'
-              : 'Ready for Calendly or equivalent booking tool integration upon providing official link.'}
-          </p>
+        <div className="bg-gradient-to-br from-blue-50/70 via-indigo-50/40 to-slate-50 rounded-2xl border border-blue-100/80 p-6 sm:p-8 text-left relative overflow-hidden shadow-xs">
+          <div className="max-w-xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 text-blue-700 text-xs font-semibold mb-3">
+              <Clock className="w-3.5 h-3.5" />
+              <span>{isFr ? 'Session de 30 minutes • Sans engagement' : '30-minute session • Zero commitment'}</span>
+            </div>
+
+            <h5 className="text-base sm:text-lg font-bold text-slate-900 mb-2">
+              {isFr ? 'Réservez votre créneau en direct sur Calendly' : 'Book your time slot directly on Calendly'}
+            </h5>
+
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
+              {isFr
+                ? 'Choisissez le jour et l\'heure qui vous conviennent le mieux pour échanger sur vos objectifs de qualification de prospects et calibrer une campagne pilote.'
+                : 'Select the date and time that suits you best to discuss your lead qualification goals and scope a pilot campaign.'}
+            </p>
+
+            <a
+              id="calendly-direct-booking-link"
+              href="https://calendly.com/ino-service2025/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 shadow-md shadow-blue-600/25 transition-all duration-200 cursor-pointer"
+            >
+              <Calendar className="w-4 h-4 text-white" />
+              <span>{isFr ? 'Ouvrir l\'agenda Calendly (30 min)' : 'Open Calendly Calendar (30 min)'}</span>
+              <ExternalLink className="w-4 h-4 text-blue-200" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

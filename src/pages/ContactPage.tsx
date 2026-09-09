@@ -7,6 +7,7 @@ import {
   Mail,
   Phone,
   Clock,
+  Calendar,
   Heart,
   Sparkles,
   CheckCircle2,
@@ -106,6 +107,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                   <span>{isFr ? 'Remplir le formulaire en ligne' : 'Fill online request form'}</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
+
+                <a
+                  href="https://calendly.com/ino-service2025/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200/80 shadow-xs transition-all cursor-pointer"
+                >
+                  <Calendar className="w-4 h-4 text-blue-600" />
+                  <span>{isFr ? 'Rendez-vous Calendly' : 'Calendly Booking'}</span>
+                </a>
 
                 <a
                   href="mailto:contact@nextcomedia.ca"
@@ -300,6 +311,25 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                       <span className="text-xs text-slate-500">
                         {isFr ? '[Numéro officiel à confirmer]' : '[Official phone pending confirmation]'}
                       </span>
+                    </div>
+                  </li>
+
+                  <li className="flex items-start gap-3 pt-2 border-t border-slate-100">
+                    <div className="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                      <Calendar className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <strong className="text-slate-900 block text-xs">
+                        {isFr ? 'Rendez-vous en ligne :' : 'Online Booking:'}
+                      </strong>
+                      <a
+                        href="https://calendly.com/ino-service2025/30min"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline text-xs font-semibold inline-flex items-center gap-1 mt-0.5"
+                      >
+                        <span>calendly.com/ino-service2025/30min</span>
+                      </a>
                     </div>
                   </li>
                 </ul>
