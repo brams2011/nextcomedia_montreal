@@ -1,6 +1,6 @@
 import React from 'react';
 import { Lang, PageRoute } from '../types';
-import { ArrowRight, CheckCircle2, TrendingUp, Star, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, TrendingUp, Star, ShieldCheck, Sparkles, PhoneCall } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 
 interface HeroProps {
@@ -73,16 +73,23 @@ export const Hero: React.FC<HeroProps> = ({ lang = 'fr', onNavigate }) => {
                 <ArrowRight className="w-4 h-4" />
               </button>
               
-              <button
-                type="button"
-                onClick={() => {
-                  onNavigate('approach');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-base font-semibold text-slate-800 border border-slate-300 bg-white/80 hover:bg-slate-50 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
+              <a
+                id="hero-phone-call-button"
+                href="tel:18889076276"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full text-base font-semibold text-blue-700 bg-white border-2 border-blue-200 hover:border-blue-400 hover:bg-blue-50/70 shadow-xs hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer group"
               >
-                {ctaSecondary}
-              </button>
+                <div className="w-8 h-8 rounded-full bg-blue-100/80 text-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <PhoneCall className="w-4 h-4 text-blue-600 animate-pulse" />
+                </div>
+                <div className="text-left leading-tight">
+                  <span className="block text-xs font-medium text-slate-500">
+                    {isFr ? 'Assistante téléphonique' : 'Phone Assistant'}
+                  </span>
+                  <span className="font-bold text-slate-900 tracking-tight text-sm sm:text-base">
+                    1 888 907 6276
+                  </span>
+                </div>
+              </a>
             </div>
 
             {/* 3 Reassurance Bullets */}
