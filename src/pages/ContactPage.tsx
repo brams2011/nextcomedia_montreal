@@ -119,11 +119,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                 </a>
 
                 <a
-                  href="mailto:contact@nextcomedia.ca"
+                  href="mailto:hamza@nextcomedia.com"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 shadow-xs transition-all cursor-pointer"
                 >
                   <Mail className="w-4 h-4 text-blue-600" />
-                  <span>contact@nextcomedia.ca</span>
+                  <span>hamza@nextcomedia.com</span>
                 </a>
               </div>
 
@@ -278,10 +278,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                     </div>
                     <div>
                       <strong className="text-slate-900 block text-xs">
-                        {isFr ? 'Montréal (Québec) :' : 'Montreal (Quebec):'}
+                        {isFr ? 'Siège et opérations :' : 'Headquarters & Operations:'}
                       </strong>
-                      <span className="text-xs text-slate-500">
-                        {isFr ? '[Adresse officielle à confirmer]' : '[Official address pending confirmation]'}
+                      <span className="text-xs text-slate-600 font-medium">
+                        Montréal, Québec, Canada
                       </span>
                     </div>
                   </li>
@@ -294,8 +294,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                       <strong className="text-slate-900 block text-xs">
                         {isFr ? 'Courriel direct :' : 'Direct Email:'}
                       </strong>
-                      <a href="mailto:contact@nextcomedia.ca" className="text-blue-600 hover:underline text-xs font-semibold">
-                        contact@nextcomedia.ca
+                      <a href="mailto:hamza@nextcomedia.com" className="text-blue-600 hover:underline text-xs font-semibold">
+                        hamza@nextcomedia.com
                       </a>
                     </div>
                   </li>
@@ -306,11 +306,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                     </div>
                     <div>
                       <strong className="text-slate-900 block text-xs">
-                        {isFr ? 'Téléphone d\'affaires :' : 'Phone:'}
+                        {isFr ? 'Téléphone d\'affaires :' : 'Business Phone:'}
                       </strong>
-                      <span className="text-xs text-slate-500">
-                        {isFr ? '[Numéro officiel à confirmer]' : '[Official phone pending confirmation]'}
-                      </span>
+                      <a href="tel:12632558888" className="text-slate-800 hover:text-blue-600 text-xs font-semibold">
+                        1 263 255 8888
+                      </a>
                     </div>
                   </li>
 

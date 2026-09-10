@@ -143,8 +143,8 @@ export const Chatbot: React.FC<ChatbotProps> = ({ lang, onNavigate }) => {
           id: (Date.now() + 1).toString(),
           role: 'model',
           text: isFr
-            ? "Une difficulté de connexion est survenue. N'hésitez pas à nous contacter directement via notre page Contact ou à contact@nextcomedia.ca."
-            : "A connection issue occurred. Please feel free to reach out directly via our Contact page or at contact@nextcomedia.ca.",
+            ? "Une difficulté de connexion est survenue. N'hésitez pas à nous contacter directement via notre page Contact ou à hamza@nextcomedia.com."
+            : "A connection issue occurred. Please feel free to reach out directly via our Contact page or at hamza@nextcomedia.com.",
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         },
       ]);

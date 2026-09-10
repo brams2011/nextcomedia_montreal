@@ -133,12 +133,16 @@ export const Footer: React.FC<FooterProps> = ({ lang, onNavigate }) => {
             </h3>
             <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
               <li>
-                <span className="block text-white font-medium">Montréal (QC, Canada) :</span>
-                <span className="text-slate-400">[Adresse d'affaires à confirmer]</span>
+                <span className="block text-white font-medium">Montréal (QC, Canada)</span>
+                <span className="text-slate-400">Siège des opérations</span>
               </li>
               <li>
                 <span className="block text-white font-medium">Courriel :</span>
-                <a href="mailto:contact@nextcomedia.ca" className="text-blue-400 hover:underline">contact@nextcomedia.ca</a>
+                <a href="mailto:hamza@nextcomedia.com" className="text-blue-400 hover:underline">hamza@nextcomedia.com</a>
+              </li>
+              <li>
+                <span className="block text-white font-medium">Téléphone d'affaires :</span>
+                <a href="tel:12632558888" className="text-slate-300 hover:text-white">1 263 255 8888</a>
               </li>
             </ul>
           </div>
