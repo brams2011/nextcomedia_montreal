@@ -397,7 +397,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ lang = 'fr' }) => {
             </span>
 
             <a
-              href="https://calendly.com/ino-service2025/30min"
+              href="https://calendly.com/haddouchhamza188/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer"
@@ -444,7 +444,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ lang = 'fr' }) => {
 
             <a
               id="calendly-direct-booking-link"
-              href="https://calendly.com/ino-service2025/30min"
+              href="https://calendly.com/haddouchhamza188/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 shadow-md shadow-blue-600/25 transition-all duration-200 cursor-pointer"

@@ -109,7 +109,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                 </button>
 
                 <a
-                  href="https://calendly.com/ino-service2025/30min"
+                  href="https://calendly.com/haddouchhamza188/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200/80 shadow-xs transition-all cursor-pointer"
@@ -323,12 +323,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                         {isFr ? 'Rendez-vous en ligne :' : 'Online Booking:'}
                       </strong>
                       <a
-                        href="https://calendly.com/ino-service2025/30min"
+                        href="https://calendly.com/haddouchhamza188/30min"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline text-xs font-semibold inline-flex items-center gap-1 mt-0.5"
                       >
-                        <span>calendly.com/ino-service2025/30min</span>
+                        <span>calendly.com/haddouchhamza188/30min</span>
                       </a>
                     </div>
                   </li>
